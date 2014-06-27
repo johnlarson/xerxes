@@ -1,0 +1,19 @@
+xerxes: JSON that can insert source code.
+
+
+John Larson
+
+2014-06-27
+
+
+Xerxes is a Javascript library that extends the functionality of
+JSON.stringify. In addition to converting JSON-compatible data types into
+JSON, it allows you to replace any value in the resulting JSON document
+into source code. It uses a very slightly modified version of JSON.stringify
+from Douglas Crocket's json2.js library.
+
+
+xerxes.js: The source code.
+
+xerxes.min.js: A minified version for deployment, made using:
+http://fmarcia.info/jsmin/test.html
