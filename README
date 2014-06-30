@@ -17,3 +17,5 @@ xerxes.js: The source code.
 
 xerxes.min.js: A minified version for deployment, made using:
 http://fmarcia.info/jsmin/test.html
+
+If you have any questions, comments, etc., email me at john.robert.larson@gmail.com
