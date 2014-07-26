@@ -18,4 +18,34 @@ xerxes.js: The source code.
 xerxes.min.js: A minified version for deployment, made using:
 http://fmarcia.info/jsmin/test.html
 
+Here is a list of similar libraries:
+
+cycle.js: contains extra functions for storing and parsing cyclical
+structures in JSON. Made by Douglas Crockford, to be used alongside
+JSON. included in https://github.com/douglascrockford/JSON-js
+
+toSource.js: a polyfill for EMCA Script's toSource function, which
+is currently only implemented by Firefox. One pitfall is that the
+source code will sometimes contain "[native code]", which cannot be parsed
+by a browser. This can cause difficulty, because the function takes no
+parameters, so the process is not customizable. Also, there are limitations
+with cyclical references. Work in progress.
+https://github.com/oliver-moran/toSource.js
+
+HydrateJS: Maintains information about what the object is an instance of.
+Also deals with circular references and with some of the issues in JSON with
+object references. Can't serialize functions and can't serialize the
+constructor property. https://github.com/nanodeath/HydrateJS
+
+ResurrectJS: This one has some VERY exciting improvements on HydrateJS, but
+may not always be the better choice of the two, as they have different
+philosophies. It deals very well with cyclical references and multiple
+references to the same object. It also maintains information about objects'
+prototypes. It is very customizable, and the fact that you
+instantiate a resurrect object allows you to easily manage multiple types
+of customized serialization in the same project. It also supports data types
+that JSON doesn't, such as dates and regular expressions. However,
+all constructors must have a global function name attached to them, and
+functions can't be serialized. https://github.com/skeeto/resurrect-js
+
 If you have any questions, comments, etc., email me at john.robert.larson@gmail.com
