@@ -45,7 +45,8 @@ prototypes. It is very customizable, and the fact that you
 instantiate a resurrect object allows you to easily manage multiple types
 of customized serialization in the same project. It also supports data types
 that JSON doesn't, such as dates and regular expressions. However,
-all constructors must have a global function name attached to them, and
-functions can't be serialized. https://github.com/skeeto/resurrect-js
+all constructors must have a global function name attached to them, as
+RessurectJS cannot serialize anonymous functions.
+https://github.com/skeeto/resurrect-js
 
 If you have any questions, comments, etc., email me at john.robert.larson@gmail.com
